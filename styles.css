@@ -1,0 +1,53 @@
+/* styles.css */
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    color: #fff; /* Цвет текста */
+}
+
+.sidenav h3 {
+    font-size: 20px;
+}
+
+.sidenav p {
+    margin: 10px 0;
+}
+
+.main {
+    margin-left: 300px; /* Same as the width of the sidenav */
+    font-size: 18px; /* Decreased font size */
+    padding: 20px;
+    overflow-y: auto; /* Добавлено свойство для вертикальной прокрутки при необходимости */
+    height: 100%; /* Растягиваем блок на всю высоту */
+    box-sizing: border-box;
+}
+
+#resume {
+    float: right;
+    width: calc(100% - 320px);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#personal-info,
+#contact-info {
+    margin-top: 60px; /* Увеличен отступ над блоками с данными в три раза */
+}
+
+#personal-info img {
+    display: block; /* обеспечивает круглую форму изображения */
+    margin: 0 auto 20px; /* центрирует изображение и добавляет отступ снизу */
+    border-radius: 50%; /* делает изображение круглым */
+}
